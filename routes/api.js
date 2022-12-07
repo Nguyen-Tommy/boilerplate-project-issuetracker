@@ -8,7 +8,7 @@ module.exports = function (app) {
   const db = mongoose.connection;
   db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-  const issueModel = require('../models/issue')
+  const issueModel = require('../models/issue');
 
   app.route('/api/issues/:project')
 

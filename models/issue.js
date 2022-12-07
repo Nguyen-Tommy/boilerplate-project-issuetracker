@@ -13,6 +13,6 @@ const issueSchema = new Schema({
     assigned_to: { type: String },
     open: { type: Boolean, default: true, required: true },
     status_text: { type: String }
-});
+}, { versionKey: false });
 
 module.exports = mongoose.model("issueModel", issueSchema);
